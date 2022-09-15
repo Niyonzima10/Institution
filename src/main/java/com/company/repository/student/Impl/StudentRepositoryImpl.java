@@ -49,7 +49,8 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     @Override
     public boolean delete(Student student) {
-        return studentList.remove(student);
+        var result = read(student.getStudentId());
+        return studentList.remove(result);
     }
 
     @Override
