@@ -27,8 +27,7 @@ public class AddressRepositoryImpl implements AddressRepository {
         boolean result = addressList.add(address);
         if(address == null);
         if(result);
-
-            return address;
+        return address;
     }
 
     @Override
